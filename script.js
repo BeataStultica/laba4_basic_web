@@ -81,6 +81,7 @@ function handleFiles(){
 document.getElementById("add_file").addEventListener("change", handleFiles, false)
 
 document.getElementById('add').addEventListener('click', function (e) {
+    document.getElementById("add_file").value = null;
     document.getElementById("add_file").click();
     e.preventDefault();
 })
